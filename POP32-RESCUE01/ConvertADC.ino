@@ -10,6 +10,5 @@ void ConvertADC() { //เปลี่ยนจาก analog เป็น digital
 void ConvertADCBack() {
   ReadADC();  //อ่านค่าสี
   if (BL < RefBL) BL = 0; else BL = 1;
-  if (BC < RefBC) BC = 0; else BC = 1;
   if (BR < RefBR) BR = 0; else BR = 1;
 }

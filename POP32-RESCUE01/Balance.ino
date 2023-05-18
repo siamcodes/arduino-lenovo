@@ -37,7 +37,6 @@ void BackwardBalance() { //ถอยหลังปรับสมดุล
 void BackwardBalanceF() {  //ถอยหลังปรับสมดุลใช้เซ็นเซอร์หน้า
   int Status = 0;
   BackwardSpeedTime(SlowSpeed, 1);
-
   while (Status == 0) {
     ConvertADC();
     if ((L1 == 0) && (R1 == 1)) { //เจอดำข้างซ้าย
@@ -50,10 +49,10 @@ void BackwardBalanceF() {  //ถอยหลังปรับสมดุลใ
       StartTimer();
       while (R1 == 1) {
         ConvertADC();
-        if (ReadTimer() > 300) {
+        if (ReadTimer() > 400) {
           AO();
           R1 = 0;
-          //delay(30);  //ถ้าตั้งลำไม่ตรง ให้ปรับตรงนี้
+          // delay(30);  //ถ้าตั้งลำไม่ตรง ให้ปรับตรงนี้
         }
       }
     }
@@ -70,7 +69,7 @@ void BackwardBalanceF() {  //ถอยหลังปรับสมดุลใ
         if (ReadTimer() > 300) {
           AO();
           L1 = 0;
-          //delay(30);  //ถ้าตั้งลำไม่ตรง ให้ปรับตรงนี้
+          // delay(30);  //ถ้าตั้งลำไม่ตรง ให้ปรับตรงนี้
         }
       }
     }

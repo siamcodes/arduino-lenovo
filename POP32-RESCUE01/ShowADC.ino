@@ -9,7 +9,6 @@ void ShowADC() {
   
   oled.text(0, 11, "Dist = %d", Dist); 
   oled.text(5, 0, "BL = %d", BL);
-  oled.text(6, 0, "BC = %d", BC);
   oled.text(7, 0, "BR = %d", BR);
   oled.show();
 }

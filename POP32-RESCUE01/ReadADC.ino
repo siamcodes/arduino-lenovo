@@ -6,8 +6,7 @@ void ReadADC() {
   R2 = analog(0);
 
   Dist = analog(8) / 41;
-  BL = analog(7);
-  BC = analog(6);
+  BL = analog(6);
   BR = analog(5);
   
 }

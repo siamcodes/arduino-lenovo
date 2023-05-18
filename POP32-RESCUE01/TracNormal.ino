@@ -1,3 +1,4 @@
+/*
 void Trac(int MotorSpeed) { //เดินตามเส้นธรรมดา 7 เซนเซอร์
   ConvertADC();
   if (C == 0) Forward(MotorSpeed, 1);
@@ -26,13 +27,6 @@ void TracNormalTime(int MotorSpeed, int Time) { //แทรกเส้นธร
 }
 
 
-//void TracNormalSonar(int MotorSpeed, int Distance) { //แทรกเส้นธรรมดา นเจอวัตถุให้หยุด
-//  Forward(MotorSpeed, 1);
-//  while (sonar() > Distance) {
-//    Trac(MotorSpeed);
-//  }
-//}
-
 void TracBackward(int MotorSpeed) { //เดินตามเส้นธรรมดา
   ConvertADC();
   if ( BC == 0) Backward(MotorSpeed, 1);
@@ -57,3 +51,4 @@ void TracNormalBackwardTime(int MotorSpeed, int Time) { //แทรกเส้�
     ReadTimer0();
   }
 }
+*/
