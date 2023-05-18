@@ -17,7 +17,9 @@ void ReadTimer1() { //อ่านค่า Timer1
 }
 
 void StartTimer() { //เริ่มใช้งาน Timer
+  Timer = 0;
   Timer = millis();  //เก็บเวลาเริมต้นนใน StartTimer
+  
 }
 
 long ReadTimer() { //อ่านค่า Timer

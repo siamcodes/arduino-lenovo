@@ -4,7 +4,7 @@ void InitialSpeed() { //กำหนดความเร็วให้หุ�
 
   Error = 0 ; //ให้ Error เป็น 0
   PreError = 0;
-  Integral = 0;
+  SumError = 0;
   Ki = 0;
   KiB = 0;
 
